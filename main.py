@@ -4,14 +4,6 @@ import os
 import warnings
 from PyPDF2 import PdfReader
 
-Authorization = os.environ.get("OPENAI_API_KEY")
-url = "https://api.openai.com/v1/chat/completions"
-
-headers = OpenAI(
-    organization=os.environ.get("organization"),
-    project=os.environ.get("project"),
-)
-
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 
 client = OpenAI(
